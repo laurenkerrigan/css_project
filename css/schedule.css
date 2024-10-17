@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    font-family: Helvetica, Sans-Serif;
+}
+
+ul{
+    list-style: none; /*removes bullets*/
+    display: flex;
+    background-color: black;
+    margin:0;
+    padding: 10px;
+    justify-content: flex-end;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px; /*first value: top/bottom, second value: sleft right*/
+    transition: color 1s, font-size 1s;
+}
+
+li a:hover{
+    background-color: darkslateblue;
+    font-size:30px;
+}
+
+li a:active{
+    background-color:white;
+    color: black;
+}
