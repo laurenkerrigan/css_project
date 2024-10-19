@@ -7,7 +7,7 @@ h1{
     display:flex;
     justify-content: center;
     background-image: url("mountain.PNG");
-    color: white;
+    color: black;
     height: 5em;
 }
 
