@@ -6,7 +6,7 @@ body{
 h1{
     display:flex;
     justify-content: center;
-    background-image: url("mountain.PNG");
+    background-image: url("/mountain.PNG");
     color: black;
     height: 5em;
 }
