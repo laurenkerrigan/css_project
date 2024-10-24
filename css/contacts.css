@@ -28,3 +28,8 @@ li a:active{
     background-color:white;
     color: black;
 }
+
+#everything{
+    display: flex;
+    flex-direction: row;
+}
