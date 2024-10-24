@@ -3,14 +3,6 @@ body{
     font-family: Helvetica, Sans-Serif;
 }
 
-h1{
-    display:flex;
-    justify-content: center;
-    background-image: url("../mountain.PNG");
-    color: black;
-    height: 5em;
-}
-
 ul{
     list-style: none; /*removes bullets*/
     display: flex;
@@ -35,4 +27,13 @@ li a:hover{
 li a:active{
     background-color:white;
     color: black;
+}
+
+h1{
+    display:flex;
+    justify-content: center;
+    background-image: url("/mountain.PNG");
+    color: white;
+    height: 5em;
+    background-repeat: no-repeat;
 }
