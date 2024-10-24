@@ -3,12 +3,14 @@ body{
     font-family: "le-monde-livre-classic-byol", serif;
     font-weight: 300;
     font-style: normal; 
+    background-color: rgb(209, 190, 162);
+
 }
 
 ul{
     list-style: none; /*removes bullets*/
     display: flex;
-    background-color: black;
+    background-color: rgb(64, 2, 2);
     margin:0;
     padding: 10px;
     justify-content: flex-end;
@@ -22,7 +24,7 @@ li a{
 }
 
 li a:hover{
-    background-color: darkslateblue;
+    background-color: rgb(139, 61, 61);
     font-size:30px;
 }
 
