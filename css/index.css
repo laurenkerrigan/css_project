@@ -44,11 +44,11 @@ li a:active{
 }
 
 #header1{
-    background-image: url(../header1.jpg);
+    background-image: url("../header1.jpg");
 }
 
 #header2{
-    background-image: url(../header2.jpg);
+    background-image: url("../header2.jpg");
 }
 
 .header-text{
