@@ -7,9 +7,9 @@ body{
 }
 
 h1{
+    color: black;
     display:flex;
     justify-content: center;
-    color: black;
 }
 
 ul{
@@ -38,26 +38,43 @@ li a:active{
     color: black;
 }
 
-#header{
+.header{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    color: white;
-    background-image: url(../header1.jpg)
+}
+
+#header1{
+    background-image: url(../header1.jpg);
+}
+
+#header2{
+    background-image: url(../header2.jpg);
+}
+
+.header-text{
+  margin: 2em;
+  background-color: #ffffff;
+  opacity: 0.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(50% - 2em);
 }
 
 .grid{
     display: flex;
+    margin: 2em;
+    justify-content: space-around;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 800px){
     ul{
         flex-direction: column;
     }
 
     .grid{
         display: column;
+        margin: 1em;
     }
     li a{
         width: 100vw;
