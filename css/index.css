@@ -55,6 +55,10 @@ li a:active{
     ul{
         flex-direction: column;
     }
+
+    .grid{
+        display: column;
+    }
     li a{
         width: 100vw;
         padding: 10px 30px;
