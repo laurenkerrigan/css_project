@@ -6,6 +6,18 @@ body{
     background-color: rgb(209, 190, 162);
 }
 
+nav{
+    top: 0;
+    right: 0;
+    left: 0;
+    position: sticky;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
 ul{
     list-style: none; /*removes bullets*/
     display: flex;
@@ -31,15 +43,69 @@ li a:active{
     color: black;
 }
 
-#everything{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
+#top{
+    display: flex;
+}
+
+#contact{
+    padding: 1em;
+}
+
+#Mission{
+    display: flex;
+    justify-content: center;
+
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    background-color:rgb(117, 99, 72);
+    color: white;
 }
 
 #corevalues{
     display: grid;
+}
 
+.items{
+    justify-items: center;
+    padding: 1em;
+}
+
+#excellence{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+#sustainability{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+#innovation{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1; 
+}
+
+#community{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+#diversity{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
 }
 
 @media screen and (max-width: 800px){
@@ -50,10 +116,6 @@ li a:active{
 
     .grid{
         flex-direction: column;
-    }
-
-    li a{
-        transition: none;
     }
 
     li a:hover{

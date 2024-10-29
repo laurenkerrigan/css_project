@@ -7,25 +7,37 @@ body{
 
 }
 
+h1{
+    color: black;
+    display:flex;
+    justify-content: center;
+}
+
+nav{
+    top: 0;
+    right: 0;
+    left: 0;
+    position: sticky;
+}
+
 ul{
     list-style: none; /*removes bullets*/
     display: flex;
+    justify-content: flex-end;
     background-color: rgb(64, 2, 2);
     margin:0;
     padding: 10px;
-    justify-content: flex-end;
 }
 
 li a{
     text-decoration: none;
     color: white;
     padding: 10px 30px; /*first value: top/bottom, second value: sleft right*/
-    transition: color 1s, font-size 1s;
+    transition: color 1s;
 }
 
 li a:hover{
     background-color: rgb(139, 61, 61);
-    font-size:30px;
 }
 
 li a:active{
@@ -35,4 +47,15 @@ li a:active{
 
 .grid-container {
     display: grid;
+}
+
+@media screen and (max-width: 800px){
+    ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li a:hover{
+        padding: 0px 10px;
+    }
 }

@@ -16,6 +16,13 @@ h2{
     font-style: italic;
 }
 
+nav{
+    top: 0;
+    right: 0;
+    left: 0;
+    position: sticky;
+}
+
 ul{
     list-style: none; /*removes bullets*/
     display: flex;
@@ -78,10 +85,6 @@ li a:active{
 
     .grid{
         flex-direction: column;
-    }
-
-    li a{
-        transition: none;
     }
 
     li a:hover{
