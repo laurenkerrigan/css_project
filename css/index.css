@@ -25,12 +25,11 @@ li a{
     text-decoration: none;
     color: white;
     padding: 10px 30px; /*first value: top/bottom, second value: sleft right*/
-    transition: color 1s, font-size 1s;
+    transition: color 1s;
 }
 
 li a:hover{
     background-color: rgb(139, 61, 61);
-    font-size:30px;
 }
 
 li a:active{
@@ -67,22 +66,22 @@ li a:active{
     justify-content: space-around;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 400px){
     ul{
         flex-direction: column;
+        align-items: center;
     }
 
     .grid{
-        display: column;
-        margin: 1em;
-    }
-    li a{
-        width: 100vw;
-        padding: 10px 30px;
+        flex-direction: column;
     }
 
-    li:hover{
-        background-color: red;
+    li a{
+        transition: none;
+    }
+
+    li a:hover{
+        padding: 0px 10px;
     }
 }
 
