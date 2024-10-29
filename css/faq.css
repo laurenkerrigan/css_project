@@ -3,6 +3,7 @@ body{
     font-family: "le-monde-livre-classic-byol", serif;
     font-weight: 300;
     font-style: normal; 
+    background-color: rgb(209, 190, 162);
 }
 
 .navigation ul{
@@ -42,20 +43,17 @@ body{
     'header header header header header header'
     'menu main main main main main'
     'menu footer footer footer footer footer';
-  gap: 10px;
-  padding: 10px;
+  gap: 20px;
+  padding: 20px;
 }
 
 .grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgb(209, 190, 162);
   text-align: left;
-  padding: 20px 0;
+  padding: 30px 0;
   font-size: 30px;
 }
 
-.item1{
-    background-color: purple;
-}
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
