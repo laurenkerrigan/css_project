@@ -45,8 +45,16 @@ li a:active{
     color: black;
 }
 
-.grid-container {
-    display: grid;
+.flex-container {
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-left: 50px;
+}
+
+#images {
+    justify-content: center;
 }
 
 @media screen and (max-width: 800px){
