@@ -54,7 +54,9 @@ li a:active{
 }
 
 #images {
-    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 @media screen and (max-width: 800px){
