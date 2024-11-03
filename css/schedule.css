@@ -7,12 +7,6 @@ body{
 
 }
 
-h1{
-    color: black;
-    display:flex;
-    justify-content: center;
-}
-
 nav{
     top: 0;
     right: 0;
@@ -21,7 +15,7 @@ nav{
 }
 
 ul{
-    list-style: none; /*removes bullets*/
+    list-style: none; 
     display: flex;
     justify-content: flex-end;
     background-color: rgb(64, 2, 2);
@@ -32,7 +26,7 @@ ul{
 li a{
     text-decoration: none;
     color: white;
-    padding: 10px 30px; /*first value: top/bottom, second value: sleft right*/
+    padding: 10px 30px; 
     transition: color 1s;
 }
 
@@ -55,11 +49,10 @@ li a:active{
 
 #images {
     display: flex;
-    align-items: center;
     justify-content: space-around;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 400px){
     ul{
         flex-direction: column;
         align-items: center;
@@ -68,4 +61,19 @@ li a:active{
     li a:hover{
         padding: 0px 10px;
     }
+
+    #images{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1600px) and (min-width: 400px){
+    #images{
+        width: 10%;
+    }
+
+    h1{
+        display:flex;
+        justify-content: center;
+      }
 }

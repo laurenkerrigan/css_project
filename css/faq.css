@@ -7,10 +7,8 @@ body{
 
 }
 
-h1{
-    color: black;
-    display:flex;
-    justify-content: center;
+img{
+  width: 100%;
 }
 
 .navigation{
@@ -21,7 +19,7 @@ h1{
 }
 
 .navigation ul{
-    list-style: none; /*removes bullets*/
+    list-style: none;
     display: flex;
     justify-content: flex-end;
     background-color: rgb(64, 2, 2);
@@ -33,7 +31,7 @@ h1{
 .navigation li a{
     text-decoration: none;
     color: white;
-    padding: 10px 30px; /*first value: top/bottom, second value: sleft right*/
+    padding: 10px 30px; 
     transition: color 1s;
 }
 
@@ -108,7 +106,7 @@ ul{
     font-size: 18px;
   }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 400px){
     ul{
         flex-direction: column;
         align-items: center;
@@ -117,4 +115,11 @@ ul{
     li a:hover{
         padding: 0px 10px;
     }
+}
+
+@media screen and (max-width: 1600px)and (min-width: 400px){
+  h1{
+    display:flex;
+    justify-content: center;
+  }
 }
