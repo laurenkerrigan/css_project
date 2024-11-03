@@ -92,3 +92,9 @@ li a:active{
     }
 }
 
+@media screen and (max-width: 1600px){
+    h1{
+        font-size: 30pt;
+        color:rgb(64, 2, 2);
+    }
+}

@@ -118,7 +118,7 @@ h3{
     grid-row-end: 2;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 400px){
     ul{
         flex-direction: column;
         align-items: center;
@@ -132,3 +132,4 @@ h3{
         padding: 0px 10px;
     }
 }
+
