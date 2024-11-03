@@ -27,6 +27,7 @@ nav{
     background-color: rgb(64, 2, 2);
     margin:0;
     padding: 10px;
+    font-size: 12pt;
 }
 
 .navigation li a{
