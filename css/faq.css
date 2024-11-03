@@ -20,7 +20,7 @@ nav{
     position: sticky;
 }
 
-ul{
+.navigation ul{
     list-style: none; /*removes bullets*/
     display: flex;
     justify-content: flex-end;
@@ -29,21 +29,83 @@ ul{
     padding: 10px;
 }
 
-li a{
+.navigation li a{
     text-decoration: none;
     color: white;
     padding: 10px 30px; /*first value: top/bottom, second value: sleft right*/
     transition: color 1s;
 }
 
-li a:hover{
+.navigation li a:hover{
     background-color: rgb(139, 61, 61);
 }
 
-li a:active{
+.navigation li a:active{
     background-color:white;
     color: black;
 }
+ul{
+    font-size: 15pt;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  padding: 20px;
+}
+
+.grid-container > div {
+  background-color: rgb(209, 190, 162);
+  text-align: left;
+  padding: 0px 0;
+  font-size: 30px;
+}
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: rgb(167, 148, 119);
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 18px;
+    font-family: "le-monde-livre-classic-byol", serif;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: rgb(188, 171, 145);
+    display: none;
+    overflow: hidden;
+  }
+
+  p{
+    font-size: 18px;
+  }
+
+  .dropdown li{
+    font-size: 18px;
+  }
 
 @media screen and (max-width: 800px){
     ul{
