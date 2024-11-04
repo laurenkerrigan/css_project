@@ -45,18 +45,46 @@ li a:active{
     color: black;
 }
 
+h1 {
+    background-color:rgb(117, 99, 72);
+}
+
 .flex-container {
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 0; /* Remove margin if you want full-bleed elements */
+    padding: 0; /* Remove padding to avoid inner spacing */
+    width: 100%;
+}
+h2 {
+    background-color: rgb(117, 99, 72); 
+    margin: 0; /* No margin to prevent any space */
+    padding: 10px 50px; /* Adjust as needed for top/bottom padding */
+    width: 100vw; /* Full width of the viewport */
+    box-sizing: border-box;
+}
+p {
     display: flex;
     flex-direction:column;
     align-items: flex-start;
     justify-content: space-around;
     margin-left: 50px;
 }
-
+h5 {
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-left: 50px;
+}
 #images {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: space-around;
+    margin-left: 50px;
 }
 
 @media screen and (max-width: 800px){
